@@ -22,4 +22,13 @@ public class HealthProfessional {
         this.name = name;
         this.specialty = specialty;
     }
+
+    /**
+     * Prints the details of the health professional to the console.
+     */
+    public void printDetails() {
+        System.out.println("ID: " + this.id);
+        System.out.println("Name: " + this.name);
+        System.out.println("Specialty: " + this.specialty);
+    }
 }
