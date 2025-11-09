@@ -29,4 +29,15 @@ public class GeneralPractitioner extends HealthProfessional {
         super(id, name, gender);
         this.practiceArea = practiceArea;
     }
+
+    /**
+     * Overrides the parent's printDetails method to include information specific to a General Practitioner.
+     * It first calls the parent's method to print common details, then adds its own specific details.
+     */
+    @Override
+    public void printDetails() {
+        System.out.println("--- Health Professional Type: General Practitioner ---");
+        super.printDetails();
+        System.out.println("Practice Area: " + this.practiceArea);
+    }
 }
