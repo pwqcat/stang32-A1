@@ -8,4 +8,25 @@ public class GeneralPractitioner extends HealthProfessional {
      * This attribute differentiates the GP from other specialists.
      */
     private String practiceArea;
+
+    /**
+     * Default constructor.
+     * Creates an empty GeneralPractitioner object, implicitly calling the parent's default constructor.
+     */
+    public GeneralPractitioner() {
+        super();
+    }
+
+    /**
+     * Parameterized constructor.
+     * Creates a GeneralPractitioner object with all attributes initialized.
+     * @param id The professional's ID.
+     * @param name The professional's name.
+     * @param gender The professional's gender.
+     * @param practiceArea The GP's specific practice area.
+     */
+    public GeneralPractitioner(int id, String name, String gender, String practiceArea) {
+        super(id, name, gender);
+        this.practiceArea = practiceArea;
+    }
 }
