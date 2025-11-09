@@ -1,7 +1,7 @@
 public class HealthProfessional {
     protected int id;
     protected String name;
-    protected String specialty;
+    protected String gender;
 
     /**
      * Default constructor.
@@ -15,12 +15,12 @@ public class HealthProfessional {
      * Creates a HealthProfessional object with specified initial values.
      * @param id The professional's ID.
      * @param name The professional's name.
-     * @param specialty The professional's specialty.
+     * @param gender The professional's gender.
      */
-    public HealthProfessional(int id, String name, String specialty) {
+    public HealthProfessional(int id, String name, String gender) {
         this.id = id;
         this.name = name;
-        this.specialty = specialty;
+        this.gender = gender;
     }
 
     /**
@@ -29,6 +29,6 @@ public class HealthProfessional {
     public void printDetails() {
         System.out.println("ID: " + this.id);
         System.out.println("Name: " + this.name);
-        System.out.println("Specialty: " + this.specialty);
+        System.out.println("Gender: " + this.gender);
     }
 }
