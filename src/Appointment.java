@@ -57,4 +57,12 @@ public class Appointment {
         System.out.println("Doctor Details:");
         doctor.printDetails();
     }
+
+    /**
+     * Gets the mobile number of the patient for this appointment.
+     * @return the patient's mobile number
+     */
+    public String getPatientMobile() {
+        return this.patientMobile;
+    }
 }
