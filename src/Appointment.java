@@ -24,4 +24,37 @@ public class Appointment {
      * meaning this can hold any object of a subclass (e.g., GeneralPractitioner, Surgeon).
      */
     private HealthProfessional doctor;
+
+    /**
+     * Default constructor.
+     * Creates an empty Appointment object.
+     */
+    public Appointment() {
+    }
+
+    /**
+     * Parameterized constructor to create an Appointment with all details.
+     * @param patientName The name of the patient.
+     * @param patientMobile The mobile number of the patient.
+     * @param timeSlot The selected time slot.
+     * @param doctor The selected health professional.
+     */
+    public Appointment(String patientName, String patientMobile, String timeSlot, HealthProfessional doctor) {
+        this.patientName = patientName;
+        this.patientMobile = patientMobile;
+        this.timeSlot = timeSlot;
+        this.doctor = doctor;
+    }
+
+    /**
+     * Prints all details of the appointment, including patient and doctor information.
+     */
+    public void printDetails() {
+        System.out.println("--- Appointment Details ---");
+        System.out.println("Patient Name: " + this.patientName);
+        System.out.println("Patient Mobile: " + this.patientMobile);
+        System.out.println("Time Slot: " + this.timeSlot);
+        System.out.println("Doctor Details:");
+        doctor.printDetails();
+    }
 }
